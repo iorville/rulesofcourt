@@ -1,0 +1,1856 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>A.M. No. 08-8-7-SC - Detailed Guide</title>
+    <style>
+        body {
+            font-family: 'Times New Roman', Times, serif;
+            font-size: 11pt;
+            line-height: 1.5;
+            max-width: 8.5in;
+            margin: 0 auto;
+            padding: 0.5in;
+        }
+        h1 {
+            font-size: 18pt;
+            text-align: center;
+            border-bottom: 3px solid #000;
+            padding-bottom: 10px;
+            margin-bottom: 5px;
+        }
+        .subtitle {
+            text-align: center;
+            font-size: 12pt;
+            margin-bottom: 20px;
+        }
+        h2 {
+            font-size: 14pt;
+            background-color: #1a5276;
+            color: white;
+            padding: 10px 15px;
+            margin-top: 25px;
+            page-break-after: avoid;
+        }
+        h3 {
+            font-size: 12pt;
+            background-color: #2980b9;
+            color: white;
+            padding: 8px 12px;
+            margin-top: 20px;
+            page-break-after: avoid;
+        }
+        h4 {
+            font-size: 11pt;
+            font-weight: bold;
+            border-bottom: 2px solid #2980b9;
+            padding-bottom: 5px;
+            margin-top: 15px;
+            margin-bottom: 10px;
+            color: #1a5276;
+        }
+        h5 {
+            font-size: 11pt;
+            font-weight: bold;
+            margin-top: 12px;
+            margin-bottom: 5px;
+            color: #333;
+        }
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            margin: 10px 0;
+            font-size: 10pt;
+            page-break-inside: avoid;
+        }
+        th, td {
+            border: 1px solid #333;
+            padding: 8px 10px;
+            text-align: left;
+            vertical-align: top;
+        }
+        th {
+            background-color: #2c3e50;
+            color: white;
+            font-weight: bold;
+        }
+        tr:nth-child(even) {
+            background-color: #f8f9fa;
+        }
+        .covered-box {
+            background-color: #d4edda;
+            border: 2px solid #28a745;
+            padding: 12px;
+            margin: 10px 0;
+            border-radius: 5px;
+        }
+        .excluded-box {
+            background-color: #f8d7da;
+            border: 2px solid #dc3545;
+            padding: 12px;
+            margin: 10px 0;
+            border-radius: 5px;
+        }
+        .warning-box {
+            background-color: #fff3cd;
+            border: 2px solid #ffc107;
+            padding: 12px;
+            margin: 10px 0;
+            border-radius: 5px;
+        }
+        .info-box {
+            background-color: #d1ecf1;
+            border: 2px solid #17a2b8;
+            padding: 12px;
+            margin: 10px 0;
+            border-radius: 5px;
+        }
+        .important-box {
+            background-color: #e7d4e8;
+            border: 2px solid #6f42c1;
+            padding: 12px;
+            margin: 10px 0;
+            border-radius: 5px;
+        }
+        .step-box {
+            background-color: #e8f4f8;
+            border-left: 5px solid #2980b9;
+            padding: 10px 15px;
+            margin: 10px 0;
+        }
+        .step-number {
+            display: inline-block;
+            background-color: #2980b9;
+            color: white;
+            width: 30px;
+            height: 30px;
+            text-align: center;
+            line-height: 30px;
+            border-radius: 50%;
+            font-weight: bold;
+            margin-right: 10px;
+        }
+        .period-highlight {
+            background-color: #ffeb3b;
+            padding: 2px 6px;
+            font-weight: bold;
+            border-radius: 3px;
+        }
+        .red-highlight {
+            background-color: #f8d7da;
+            padding: 2px 6px;
+            font-weight: bold;
+            border-radius: 3px;
+        }
+        .green-highlight {
+            background-color: #d4edda;
+            padding: 2px 6px;
+            font-weight: bold;
+            border-radius: 3px;
+        }
+        ul, ol {
+            margin: 8px 0;
+            padding-left: 25px;
+        }
+        li {
+            margin: 5px 0;
+        }
+        .legal-basis {
+            font-style: italic;
+            color: #555;
+            font-size: 10pt;
+            margin-bottom: 10px;
+        }
+        .comparison-header {
+            background-color: #34495e;
+        }
+        .toc {
+            background-color: #f4f6f7;
+            padding: 15px 20px;
+            border-radius: 5px;
+            margin-bottom: 20px;
+        }
+        .toc ol {
+            margin: 0;
+        }
+        .toc li {
+            margin: 3px 0;
+        }
+        .flow-container {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            align-items: center;
+            margin: 15px 0;
+        }
+        .flow-step {
+            background-color: #3498db;
+            color: white;
+            padding: 10px 15px;
+            margin: 5px;
+            border-radius: 5px;
+            text-align: center;
+            font-weight: bold;
+            font-size: 10pt;
+        }
+        .flow-arrow {
+            font-size: 18pt;
+            margin: 0 5px;
+            color: #2c3e50;
+        }
+        .form-sample {
+            background-color: #f9f9f9;
+            border: 1px dashed #999;
+            padding: 15px;
+            margin: 10px 0;
+            font-family: 'Courier New', monospace;
+            font-size: 9pt;
+        }
+        @media print {
+            h2, h3 {
+                page-break-after: avoid;
+            }
+            table, .step-box, .info-box, .warning-box {
+                page-break-inside: avoid;
+            }
+            .page-break {
+                page-break-before: always;
+            }
+        }
+        .two-column {
+            display: flex;
+            gap: 20px;
+        }
+        .two-column > div {
+            flex: 1;
+        }
+        .checklist {
+            list-style-type: none;
+            padding-left: 0;
+        }
+        .checklist li::before {
+            content: "☐ ";
+            font-size: 14pt;
+        }
+        .section-divider {
+            border-top: 3px double #2c3e50;
+            margin: 30px 0;
+            padding-top: 10px;
+        }
+    </style>
+</head>
+<body>
+
+<h1>A.M. No. 08-8-7-SC</h1>
+<p class="subtitle">
+    <strong>REVISED RULES OF PROCEDURE FOR SMALL CLAIMS CASES</strong><br>
+    <strong>&</strong><br>
+    <strong>REVISED RULES ON SUMMARY PROCEDURE</strong><br>
+    <em>(As amended by A.M. No. 21-04-17-SC)</em>
+</p>
+
+<div class="toc">
+    <h4 style="margin-top: 0;">Table of Contents</h4>
+    <ol>
+        <li><strong>PART I: SMALL CLAIMS CASES</strong>
+            <ol type="a">
+                <li>Overview and Purpose</li>
+                <li>Covered Cases and Jurisdictional Amount</li>
+                <li>Excluded Cases</li>
+                <li>Venue Rules</li>
+                <li>Commencement of Action</li>
+                <li>Response and Counterclaim</li>
+                <li>Prohibited Pleadings and Motions</li>
+                <li>Hearing Procedure</li>
+                <li>Decision</li>
+                <li>Execution</li>
+                <li>Forms</li>
+            </ol>
+        </li>
+        <li><strong>PART II: SUMMARY PROCEDURE (CIVIL CASES)</strong>
+            <ol type="a">
+                <li>Covered Cases</li>
+                <li>Procedure</li>
+                <li>Prohibited Pleadings and Motions</li>
+                <li>Judgment and Appeal</li>
+            </ol>
+        </li>
+        <li><strong>PART III: COMPARISON CHARTS</strong></li>
+        <li><strong>PART IV: FLOWCHARTS</strong></li>
+        <li><strong>PART V: CHECKLISTS</strong></li>
+    </ol>
+</div>
+
+<div class="section-divider"></div>
+
+<h2>PART I: SMALL CLAIMS CASES</h2>
+<p class="legal-basis">Legal Basis: A.M. No. 08-8-7-SC (2008), as amended by A.M. No. 21-04-17-SC (2021)</p>
+
+<h3>1. Overview and Purpose</h3>
+
+<div class="info-box">
+    <h5>WHAT IS SMALL CLAIMS?</h5>
+    <p>A <strong>special civil action</strong> designed to provide an <strong>inexpensive and expeditious</strong> means to settle disputes involving <strong>small sums of money</strong> without the need for formal rules of procedure and legal representation.</p>
+
+    <h5>KEY FEATURES:</h5>
+    <ul>
+        <li><strong>NO LAWYERS</strong> allowed during hearing</li>
+        <li><strong>NO formal pleadings</strong> - prescribed forms only</li>
+        <li><strong>SAME DAY decision</strong> or within 5 days</li>
+        <li><strong>FINAL and UNAPPEALABLE</strong> decision</li>
+        <li><strong>NO barangay conciliation</strong> required</li>
+        <li><strong>Reduced filing fees</strong></li>
+    </ul>
+</div>
+
+<h3>2. Covered Cases and Jurisdictional Amount</h3>
+
+<h4>A. Jurisdictional Amount</h4>
+<table>
+    <tr>
+        <th colspan="2" style="text-align: center; background-color: #28a745;">JURISDICTIONAL THRESHOLD</th>
+    </tr>
+    <tr>
+        <td style="width: 40%;"><strong>Maximum Amount</strong></td>
+        <td><span class="period-highlight">≤ ₱1,000,000.00</span></td>
+    </tr>
+    <tr>
+        <td><strong>Computation</strong></td>
+        <td>EXCLUSIVE of interest, damages of whatever kind, attorney's fees, litigation expenses, and costs</td>
+    </tr>
+    <tr>
+        <td><strong>Application</strong></td>
+        <td>Nationwide (uniform amount regardless of location)</td>
+    </tr>
+</table>
+
+<h4>B. Covered Claims (Exhaustive List)</h4>
+<div class="covered-box">
+    <h5>✓ ACTIONS COVERED BY SMALL CLAIMS:</h5>
+
+    <table>
+        <tr>
+            <th width="5%">#</th>
+            <th width="35%">Type of Claim</th>
+            <th>Description / Examples</th>
+        </tr>
+        <tr>
+            <td>1</td>
+            <td><strong>Actions for Sum of Money</strong></td>
+            <td>Pure money claims; collection of debts</td>
+        </tr>
+        <tr>
+            <td>2</td>
+            <td><strong>Civil Liability from Criminal Offense</strong></td>
+            <td>
+                When criminal action has been:
+                <ul>
+                    <li>Dismissed without determination of civil liability</li>
+                    <li>Results in acquittal without declaration that civil liability is extinguished</li>
+                    <li>Reserved for separate civil action</li>
+                </ul>
+            </td>
+        </tr>
+        <tr>
+            <td>3</td>
+            <td><strong>Enforcement of Barangay Settlement/Arbitration Award</strong></td>
+            <td>
+                Amicable settlement or arbitration award under the Katarungang Pambarangay Law:
+                <ul>
+                    <li>More than 6 months from date of settlement</li>
+                    <li>Repudiated within 10 days</li>
+                </ul>
+            </td>
+        </tr>
+        <tr>
+            <td>4</td>
+            <td><strong>Money Claims from Contract of LEASE</strong></td>
+            <td>
+                <ul>
+                    <li>Unpaid rentals</li>
+                    <li>Damages to leased property</li>
+                    <li>Security deposit recovery</li>
+                    <li>Utility charges</li>
+                </ul>
+                <em>Note: NOT for ejectment (use Summary Procedure)</em>
+            </td>
+        </tr>
+        <tr>
+            <td>5</td>
+            <td><strong>Money Claims from Contract of LOAN</strong></td>
+            <td>
+                <ul>
+                    <li>Personal loans</li>
+                    <li>Bank loans (personal capacity)</li>
+                    <li>Lending company loans</li>
+                    <li>Online lending apps</li>
+                    <li>Promissory notes</li>
+                </ul>
+            </td>
+        </tr>
+        <tr>
+            <td>6</td>
+            <td><strong>Money Claims from Contract of SERVICES</strong></td>
+            <td>
+                <ul>
+                    <li>Professional fees (doctors, lawyers, engineers)</li>
+                    <li>Contractor services</li>
+                    <li>Repair services</li>
+                    <li>Consultancy fees</li>
+                    <li>Tuition fees</li>
+                    <li>Subscription services</li>
+                </ul>
+            </td>
+        </tr>
+        <tr>
+            <td>7</td>
+            <td><strong>Money Claims from Contract of SALE</strong></td>
+            <td>
+                <ul>
+                    <li>Sale of personal property only</li>
+                    <li>Installment sales</li>
+                    <li>Online purchases</li>
+                    <li>Goods not delivered or defective</li>
+                </ul>
+                <em>Note: NOT for sale of REAL property</em>
+            </td>
+        </tr>
+        <tr>
+            <td>8</td>
+            <td><strong>Mortgage Deficiency Claims</strong></td>
+            <td>
+                Deficiency after extrajudicial foreclosure of:
+                <ul>
+                    <li>Real estate mortgage</li>
+                    <li>Chattel mortgage</li>
+                </ul>
+            </td>
+        </tr>
+        <tr>
+            <td>9</td>
+            <td><strong>Purely Civil Action for Wages/Salaries</strong></td>
+            <td>
+                <ul>
+                    <li>Wages</li>
+                    <li>Salaries</li>
+                    <li>Holiday pay</li>
+                    <li>Overtime pay</li>
+                    <li>Service incentive leave</li>
+                    <li>Service charges</li>
+                    <li>13th month pay</li>
+                </ul>
+                <em>Note: Employer-employee relationship must be ADMITTED or not disputed</em>
+            </td>
+        </tr>
+    </table>
+</div>
+
+<h4>C. Excluded Cases</h4>
+<div class="excluded-box">
+    <h5>✗ CASES NOT COVERED (Even if ≤ ₱1,000,000):</h5>
+
+    <table>
+        <tr>
+            <th width="5%">#</th>
+            <th width="35%">Exclusion</th>
+            <th>Reason / Proper Forum</th>
+        </tr>
+        <tr>
+            <td>1</td>
+            <td><strong>Labor Cases</strong></td>
+            <td>
+                Where employer-employee relationship is DISPUTED<br>
+                <em>Proper Forum: NLRC / Labor Arbiter</em>
+            </td>
+        </tr>
+        <tr>
+            <td>2</td>
+            <td><strong>Actions involving REAL PROPERTY</strong></td>
+            <td>
+                <ul>
+                    <li>Title disputes</li>
+                    <li>Possession of land</li>
+                    <li>Sale of real property</li>
+                    <li>Partition</li>
+                </ul>
+                <em>Proper Forum: MTC (Summary) or RTC</em>
+            </td>
+        </tr>
+        <tr>
+            <td>3</td>
+            <td><strong>Forcible Entry / Unlawful Detainer</strong></td>
+            <td>
+                Ejectment cases regardless of amount<br>
+                <em>Proper Forum: MTC under Summary Procedure</em>
+            </td>
+        </tr>
+        <tr>
+            <td>4</td>
+            <td><strong>Tax Collection Cases</strong></td>
+            <td>
+                Government tax claims<br>
+                <em>Proper Forum: RTC or CTA</em>
+            </td>
+        </tr>
+        <tr>
+            <td>5</td>
+            <td><strong>Actions against the Government</strong></td>
+            <td>
+                Claims vs. national/local government, agencies<br>
+                <em>Proper Forum: RTC / COA</em>
+            </td>
+        </tr>
+        <tr>
+            <td>6</td>
+            <td><strong>Cases requiring Provisional Remedies</strong></td>
+            <td>
+                <ul>
+                    <li>Preliminary attachment</li>
+                    <li>Preliminary injunction</li>
+                    <li>Receivership</li>
+                    <li>Replevin</li>
+                </ul>
+                <em>Proper Forum: Regular court procedure</em>
+            </td>
+        </tr>
+        <tr>
+            <td>7</td>
+            <td><strong>Cases with Substantial Issues of Law</strong></td>
+            <td>
+                Complex legal issues that require full trial<br>
+                <em>Court may dismiss; refile under regular procedure</em>
+            </td>
+        </tr>
+        <tr>
+            <td>8</td>
+            <td><strong>Claims exceeding ₱1,000,000</strong></td>
+            <td>
+                <em>Proper Forum: MTC (regular) or RTC</em>
+            </td>
+        </tr>
+        <tr>
+            <td>9</td>
+            <td><strong>Maritime/Admiralty Cases</strong></td>
+            <td>
+                <em>Proper Forum: RTC or MTC (regular procedure)</em>
+            </td>
+        </tr>
+        <tr>
+            <td>10</td>
+            <td><strong>Probate Matters</strong></td>
+            <td>
+                <em>Proper Forum: MTC or RTC (special proceeding)</em>
+            </td>
+        </tr>
+    </table>
+</div>
+
+<h3 class="page-break">3. Venue Rules</h3>
+
+<table>
+    <tr>
+        <th>Type of Defendant</th>
+        <th>Where to File</th>
+    </tr>
+    <tr>
+        <td><strong>Individual Defendant</strong></td>
+        <td>
+            At the option of plaintiff:
+            <ul>
+                <li>Where plaintiff resides; OR</li>
+                <li>Where defendant resides</li>
+            </ul>
+        </td>
+    </tr>
+    <tr>
+        <td><strong>Two or More Defendants with Different Residences</strong></td>
+        <td>
+            At the option of plaintiff:
+            <ul>
+                <li>Where plaintiff resides; OR</li>
+                <li>Where ANY of the defendants resides</li>
+            </ul>
+        </td>
+    </tr>
+    <tr>
+        <td><strong>Juridical Entity (Corporation, Partnership)</strong></td>
+        <td>
+            At the option of plaintiff:
+            <ul>
+                <li>Where plaintiff resides; OR</li>
+                <li>Where defendant's principal office is located; OR</li>
+                <li>Where defendant's branch office is located (if transaction occurred there)</li>
+            </ul>
+        </td>
+    </tr>
+    <tr>
+        <td><strong>Non-Resident Defendant</strong></td>
+        <td>Where plaintiff resides</td>
+    </tr>
+</table>
+
+<div class="warning-box">
+    <h5>⚠️ IMPORTANT VENUE NOTES:</h5>
+    <ul>
+        <li><strong>NO stipulation on venue</strong> is allowed in small claims</li>
+        <li><strong>Venue cannot be waived</strong> - court may dismiss motu proprio if improperly filed</li>
+        <li><strong>Barangay conciliation is NOT required</strong> before filing</li>
+    </ul>
+</div>
+
+<h3>4. Commencement of Action</h3>
+
+<h4>A. How to File</h4>
+<div class="step-box">
+    <p><span class="step-number">1</span><strong>PREPARE THE STATEMENT OF CLAIM</strong></p>
+    <ul>
+        <li>Use the prescribed <strong>Form 1-SCC</strong> (Statement of Claim)</li>
+        <li>Fill out completely and legibly</li>
+        <li>State the cause of action clearly</li>
+        <li>Indicate the amount of claim</li>
+        <li>Attach supporting documents</li>
+    </ul>
+</div>
+
+<div class="step-box">
+    <p><span class="step-number">2</span><strong>PREPARE SUPPORTING DOCUMENTS</strong></p>
+    <p>Attach certified photocopies of:</p>
+    <ul>
+        <li>Contract, promissory note, or written agreement</li>
+        <li>Receipts, vouchers, or proof of payment</li>
+        <li>Demand letter (if any)</li>
+        <li>Barangay certification (if applicable)</li>
+        <li>Any other relevant document</li>
+    </ul>
+</div>
+
+<div class="step-box">
+    <p><span class="step-number">3</span><strong>FILE WITH THE COURT</strong></p>
+    <ul>
+        <li>File with the proper MTC/MCTC/MeTC/MTCC</li>
+        <li>Pay the required filing fees (reduced rates for small claims)</li>
+        <li>Submit sufficient copies for all parties</li>
+    </ul>
+</div>
+
+<div class="step-box">
+    <p><span class="step-number">4</span><strong>COURT ACTION (within 24 hours)</strong></p>
+    <ul>
+        <li>If sufficient in form and substance → Court issues <strong>Summons</strong></li>
+        <li>If insufficient → Court dismisses outright OR orders amendment within <strong>non-extendible period</strong></li>
+        <li>Court sets <strong>hearing date</strong> (not earlier than 15 days but not later than 30 days from filing)</li>
+    </ul>
+</div>
+
+<h4>B. Filing Fees (Reduced Rates)</h4>
+<table>
+    <tr>
+        <th>Amount of Claim</th>
+        <th>Filing Fee</th>
+    </tr>
+    <tr>
+        <td>Not exceeding ₱150,000</td>
+        <td>₱1,000.00</td>
+    </tr>
+    <tr>
+        <td>More than ₱150,000 up to ₱200,000</td>
+        <td>₱1,500.00</td>
+    </tr>
+    <tr>
+        <td>More than ₱200,000 up to ₱250,000</td>
+        <td>₱2,000.00</td>
+    </tr>
+    <tr>
+        <td>More than ₱250,000 up to ₱300,000</td>
+        <td>₱3,000.00</td>
+    </tr>
+    <tr>
+        <td>More than ₱300,000 up to ₱400,000</td>
+        <td>₱3,500.00</td>
+    </tr>
+    <tr>
+        <td>More than ₱400,000 up to ₱1,000,000</td>
+        <td>₱5,000.00</td>
+    </tr>
+</table>
+<p><em>Note: These are the docket fees only. Additional legal fees may apply.</em></p>
+
+<h3 class="page-break">5. Response and Counterclaim</h3>
+
+<h4>A. Defendant's Response</h4>
+<table>
+    <tr>
+        <th>Aspect</th>
+        <th>Rule</th>
+    </tr>
+    <tr>
+        <td><strong>Form</strong></td>
+        <td>Use prescribed <strong>Form 2-SCC</strong> (Response)</td>
+    </tr>
+    <tr>
+        <td><strong>When to File</strong></td>
+        <td>
+            <span class="period-highlight">Within 10 DAYS</span> from receipt of summons<br>
+            OR at the latest, <strong>on the date of hearing</strong>
+        </td>
+    </tr>
+    <tr>
+        <td><strong>Contents</strong></td>
+        <td>
+            <ul>
+                <li>Specific denial or admission of claims</li>
+                <li>Statement of defenses</li>
+                <li>Supporting documents</li>
+            </ul>
+        </td>
+    </tr>
+    <tr>
+        <td><strong>Effect of Failure to File</strong></td>
+        <td>Defendant may still appear at hearing but cannot present evidence previously required to be attached</td>
+    </tr>
+</table>
+
+<h4>B. Counterclaim</h4>
+<table>
+    <tr>
+        <th>Requirement</th>
+        <th>Rule</th>
+    </tr>
+    <tr>
+        <td><strong>Type Allowed</strong></td>
+        <td><strong>COMPULSORY counterclaim ONLY</strong> (arising from same transaction)</td>
+    </tr>
+    <tr>
+        <td><strong>Amount Limit</strong></td>
+        <td>Must also be ≤ ₱1,000,000 (small claims threshold)</td>
+    </tr>
+    <tr>
+        <td><strong>When to File</strong></td>
+        <td>Together with the Response</td>
+    </tr>
+    <tr>
+        <td><strong>Effect if Not Filed</strong></td>
+        <td>Compulsory counterclaim is <strong>BARRED</strong> (cannot be filed separately)</td>
+    </tr>
+    <tr>
+        <td><strong>Permissive Counterclaim</strong></td>
+        <td><span class="red-highlight">NOT ALLOWED</span> - must be filed as separate action</td>
+    </tr>
+</table>
+
+<div class="warning-box">
+    <h5>⚠️ IF COUNTERCLAIM EXCEEDS ₱1,000,000:</h5>
+    <ul>
+        <li>The case shall be <strong>DISMISSED</strong> from small claims</li>
+        <li>Both claim and counterclaim must be filed under <strong>regular procedure</strong></li>
+    </ul>
+</div>
+
+<h3>6. Prohibited Pleadings and Motions</h3>
+
+<div class="excluded-box">
+    <h5>✗ THE FOLLOWING ARE ABSOLUTELY PROHIBITED:</h5>
+    <table>
+        <tr>
+            <th width="5%">#</th>
+            <th>Prohibited Pleading/Motion</th>
+            <th>Rationale</th>
+        </tr>
+        <tr>
+            <td>1</td>
+            <td><strong>Motion to Dismiss</strong></td>
+            <td>All defenses must be raised in the Response</td>
+        </tr>
+        <tr>
+            <td>2</td>
+            <td><strong>Motion for Bill of Particulars</strong></td>
+            <td>Forms are self-explanatory; clarification at hearing</td>
+        </tr>
+        <tr>
+            <td>3</td>
+            <td><strong>Motion for New Trial</strong></td>
+            <td>Decision is final</td>
+        </tr>
+        <tr>
+            <td>4</td>
+            <td><strong>Motion for Reconsideration</strong></td>
+            <td>Decision is final and unappealable</td>
+        </tr>
+        <tr>
+            <td>5</td>
+            <td><strong>Petition for Relief from Judgment</strong></td>
+            <td>Decision is immediately executory</td>
+        </tr>
+        <tr>
+            <td>6</td>
+            <td><strong>Motion for Extension of Time</strong></td>
+            <td>All periods are non-extendible</td>
+        </tr>
+        <tr>
+            <td>7</td>
+            <td><strong>Memorandum</strong></td>
+            <td>No formal pleadings allowed</td>
+        </tr>
+        <tr>
+            <td>8</td>
+            <td><strong>Petition for Certiorari, Mandamus, Prohibition</strong></td>
+            <td>Against interlocutory orders; speedy resolution</td>
+        </tr>
+        <tr>
+            <td>9</td>
+            <td><strong>Motion to Declare Defendant in Default</strong></td>
+            <td>No default; case decided on evidence presented</td>
+        </tr>
+        <tr>
+            <td>10</td>
+            <td><strong>Third-Party Complaint</strong></td>
+            <td>Only original parties allowed</td>
+        </tr>
+        <tr>
+            <td>11</td>
+            <td><strong>Intervention</strong></td>
+            <td>Only original parties allowed</td>
+        </tr>
+        <tr>
+            <td>12</td>
+            <td><strong>Reply</strong></td>
+            <td>No further pleadings after Response</td>
+        </tr>
+        <tr>
+            <td>13</td>
+            <td><strong>Appeal</strong></td>
+            <td><span class="red-highlight">Decision is FINAL and UNAPPEALABLE</span></td>
+        </tr>
+    </table>
+</div>
+
+<h3 class="page-break">7. Hearing Procedure</h3>
+
+<h4>A. Schedule of Hearing</h4>
+<table>
+    <tr>
+        <th>Aspect</th>
+        <th>Rule</th>
+    </tr>
+    <tr>
+        <td><strong>When Set</strong></td>
+        <td>
+            <ul>
+                <li>Not earlier than <strong>15 days</strong> from filing</li>
+                <li>Not later than <strong>30 days</strong> from filing</li>
+            </ul>
+        </td>
+    </tr>
+    <tr>
+        <td><strong>Notice</strong></td>
+        <td>Summons includes notice of hearing date</td>
+    </tr>
+    <tr>
+        <td><strong>Postponement</strong></td>
+        <td><span class="red-highlight">NOT ALLOWED</span> except for clearly meritorious reasons</td>
+    </tr>
+</table>
+
+<h4>B. Who Must Appear</h4>
+<table>
+    <tr>
+        <th>Party</th>
+        <th>Appearance Requirement</th>
+        <th>Representative Allowed?</th>
+    </tr>
+    <tr>
+        <td><strong>Individual Plaintiff</strong></td>
+        <td>Must appear <strong>PERSONALLY</strong></td>
+        <td>Only if incapacitated (with SPA specifying authority to enter amicable settlement)</td>
+    </tr>
+    <tr>
+        <td><strong>Individual Defendant</strong></td>
+        <td>Must appear <strong>PERSONALLY</strong></td>
+        <td>Only if incapacitated (with SPA)</td>
+    </tr>
+    <tr>
+        <td><strong>Corporation/Juridical Entity</strong></td>
+        <td>Through authorized representative</td>
+        <td>Yes, with Secretary's Certificate / Board Resolution</td>
+    </tr>
+    <tr>
+        <td><strong>Partnership</strong></td>
+        <td>Through partner or authorized representative</td>
+        <td>Yes, with authority document</td>
+    </tr>
+    <tr>
+        <td><strong>Minor/Incompetent</strong></td>
+        <td>Through guardian or guardian ad litem</td>
+        <td>Required</td>
+    </tr>
+</table>
+
+<div class="important-box">
+    <h5>🚫 LAWYERS ARE NOT ALLOWED DURING HEARING</h5>
+    <ul>
+        <li>Parties must appear <strong>without lawyers</strong></li>
+        <li>Lawyers may <strong>assist in preparation</strong> before the hearing</li>
+        <li>Lawyers may NOT appear, speak, or participate during the hearing</li>
+        <li>If lawyer appears → Court will require lawyer to leave</li>
+    </ul>
+</div>
+
+<h4>C. Effect of Non-Appearance</h4>
+<table>
+    <tr>
+        <th>Who is Absent</th>
+        <th>Effect</th>
+    </tr>
+    <tr>
+        <td><strong>PLAINTIFF absent</strong><br>(without justifiable cause)</td>
+        <td>
+            <ul>
+                <li>Claim is <strong>DISMISSED without prejudice</strong></li>
+                <li>May refile the claim</li>
+                <li>Counterclaim (if any) may proceed</li>
+            </ul>
+        </td>
+    </tr>
+    <tr>
+        <td><strong>DEFENDANT absent</strong><br>(without justifiable cause)</td>
+        <td>
+            <ul>
+                <li>Effect of <strong>submission to judgment</strong></li>
+                <li>Court decides based on evidence of plaintiff</li>
+                <li>Defendant <strong>waives</strong> right to present evidence</li>
+            </ul>
+        </td>
+    </tr>
+    <tr>
+        <td><strong>BOTH absent</strong></td>
+        <td>Case <strong>DISMISSED without prejudice</strong></td>
+    </tr>
+</table>
+
+<h4>D. Hearing Procedure (Step-by-Step)</h4>
+
+<div class="step-box">
+    <p><span class="step-number">1</span><strong>PRELIMINARY CONFERENCE</strong></p>
+    <p>Court shall:</p>
+    <ul>
+        <li>Clarify issues</li>
+        <li>Determine facts admitted</li>
+        <li>Explore possibility of <strong>amicable settlement</strong></li>
+    </ul>
+</div>
+
+<div class="step-box">
+    <p><span class="step-number">2</span><strong>MEDIATION ATTEMPT</strong></p>
+    <ul>
+        <li>Court actively encourages settlement</li>
+        <li>If settled → <strong>Judgment based on Compromise</strong></li>
+        <li>Settlement is immediately final and executory</li>
+    </ul>
+</div>
+
+<div class="step-box">
+    <p><span class="step-number">3</span><strong>PRESENTATION OF EVIDENCE</strong> (If no settlement)</p>
+    <ul>
+        <li>Plaintiff presents claim and evidence</li>
+        <li>Defendant presents defense and evidence</li>
+        <li>Court may ask clarificatory questions</li>
+        <li><strong>Rules on evidence applied in suppletory character</strong></li>
+        <li><strong>No formal offer of evidence</strong> required</li>
+    </ul>
+</div>
+
+<div class="step-box">
+    <p><span class="step-number">4</span><strong>DECISION</strong></p>
+    <ul>
+        <li>Rendered on <strong>SAME DAY</strong> of hearing; OR</li>
+        <li>Within <strong>5 DAYS</strong> from hearing if court needs to evaluate</li>
+        <li>Decision is <strong>FINAL and IMMEDIATELY EXECUTORY</strong></li>
+    </ul>
+</div>
+
+<h3 class="page-break">8. Decision</h3>
+
+<h4>A. When Rendered</h4>
+<table>
+    <tr>
+        <th>Timing</th>
+        <th>Circumstance</th>
+    </tr>
+    <tr>
+        <td><span class="period-highlight">SAME DAY</span> of hearing</td>
+        <td>General rule; if evidence is clear and sufficient</td>
+    </tr>
+    <tr>
+        <td><span class="period-highlight">Within 5 DAYS</span> from hearing</td>
+        <td>If court needs time to evaluate evidence</td>
+    </tr>
+</table>
+
+<h4>B. Nature of Decision</h4>
+<div class="important-box">
+    <table>
+        <tr>
+            <th>Characteristic</th>
+            <th>Meaning</th>
+        </tr>
+        <tr>
+            <td><strong>FINAL</strong></td>
+            <td>No further proceedings; case ends with decision</td>
+        </tr>
+        <tr>
+            <td><strong>UNAPPEALABLE</strong></td>
+            <td>Cannot be appealed to higher court</td>
+        </tr>
+        <tr>
+            <td><strong>IMMEDIATELY EXECUTORY</strong></td>
+            <td>Can be enforced right after promulgation</td>
+        </tr>
+    </table>
+</div>
+
+<h4>C. Only Remedy Against Decision</h4>
+<div class="warning-box">
+    <h5>⚠️ ONLY AVAILABLE REMEDY: CERTIORARI (Rule 65)</h5>
+    <table>
+        <tr>
+            <th>Aspect</th>
+            <th>Details</th>
+        </tr>
+        <tr>
+            <td><strong>Ground</strong></td>
+            <td><strong>GRAVE ABUSE OF DISCRETION</strong> amounting to lack or excess of jurisdiction</td>
+        </tr>
+        <tr>
+            <td><strong>Filed With</strong></td>
+            <td>Regional Trial Court</td>
+        </tr>
+        <tr>
+            <td><strong>Period</strong></td>
+            <td><span class="period-highlight">60 DAYS</span> from notice of decision (STRICT, non-extendible)</td>
+        </tr>
+        <tr>
+            <td><strong>Examples</strong></td>
+            <td>
+                <ul>
+                    <li>Court acted without jurisdiction</li>
+                    <li>Court exceeded jurisdiction</li>
+                    <li>Denial of due process</li>
+                    <li>Decision is patently erroneous</li>
+                </ul>
+            </td>
+        </tr>
+        <tr>
+            <td><strong>Effect on Execution</strong></td>
+            <td>Filing certiorari does NOT stay execution unless TRO/injunction issued</td>
+        </tr>
+    </table>
+</div>
+
+<h3>9. Execution</h3>
+
+<h4>A. When Execution Issues</h4>
+<table>
+    <tr>
+        <th>Timing</th>
+        <th>Procedure</th>
+    </tr>
+    <tr>
+        <td><strong>Immediately after Decision</strong></td>
+        <td>Decision is immediately executory upon promulgation</td>
+    </tr>
+    <tr>
+        <td><strong>Motion for Execution</strong></td>
+        <td>Prevailing party files motion for issuance of writ of execution</td>
+    </tr>
+    <tr>
+        <td><strong>Issuance of Writ</strong></td>
+        <td>Court issues writ upon motion; no waiting period</td>
+    </tr>
+</table>
+
+<h4>B. Execution Procedure</h4>
+<table>
+    <tr>
+        <th>Step</th>
+        <th>Action</th>
+    </tr>
+    <tr>
+        <td>1</td>
+        <td>Sheriff <strong>demands</strong> payment from losing party</td>
+    </tr>
+    <tr>
+        <td>2</td>
+        <td>If no payment → Sheriff <strong>levies</strong> on personal property</td>
+    </tr>
+    <tr>
+        <td>3</td>
+        <td>If insufficient → Sheriff <strong>levies</strong> on real property</td>
+    </tr>
+    <tr>
+        <td>4</td>
+        <td><strong>Execution sale</strong> (auction) of levied property</td>
+    </tr>
+    <tr>
+        <td>5</td>
+        <td>Proceeds applied to judgment</td>
+    </tr>
+</table>
+
+<div class="info-box">
+    <h5>EXECUTION TIMELINE:</h5>
+    <ul>
+        <li><strong>By Motion:</strong> Within 5 years from entry of judgment</li>
+        <li><strong>By Action:</strong> After 5 years but within 10 years (file separate action)</li>
+    </ul>
+</div>
+
+<h3 class="page-break">10. Forms Used in Small Claims</h3>
+
+<table>
+    <tr>
+        <th>Form Number</th>
+        <th>Title</th>
+        <th>Used By</th>
+    </tr>
+    <tr>
+        <td><strong>Form 1-SCC</strong></td>
+        <td>Statement of Claim</td>
+        <td>Plaintiff</td>
+    </tr>
+    <tr>
+        <td><strong>Form 2-SCC</strong></td>
+        <td>Response</td>
+        <td>Defendant</td>
+    </tr>
+    <tr>
+        <td><strong>Form 3-SCC</strong></td>
+        <td>Summons</td>
+        <td>Court</td>
+    </tr>
+    <tr>
+        <td><strong>Form 4-SCC</strong></td>
+        <td>Subpoena</td>
+        <td>Court</td>
+    </tr>
+    <tr>
+        <td><strong>Form 5-SCC</strong></td>
+        <td>Notice of Hearing</td>
+        <td>Court</td>
+    </tr>
+    <tr>
+        <td><strong>Form 6-SCC</strong></td>
+        <td>Decision</td>
+        <td>Court</td>
+    </tr>
+    <tr>
+        <td><strong>Form 7-SCC</strong></td>
+        <td>Writ of Execution</td>
+        <td>Court</td>
+    </tr>
+    <tr>
+        <td><strong>Form 8-SCC</strong></td>
+        <td>Notice of Dismissal</td>
+        <td>Court</td>
+    </tr>
+</table>
+
+<div class="section-divider"></div>
+
+<h2 class="page-break">PART II: SUMMARY PROCEDURE (CIVIL CASES)</h2>
+<p class="legal-basis">Legal Basis: A.M. No. 08-8-7-SC - Revised Rules on Summary Procedure</p>
+
+<h3>1. Covered Cases</h3>
+
+<h4>A. Civil Cases Under Summary Procedure</h4>
+<div class="covered-box">
+    <table>
+        <tr>
+            <th width="5%">#</th>
+            <th width="35%">Case Type</th>
+            <th>Details</th>
+        </tr>
+        <tr>
+            <td>1</td>
+            <td><strong>FORCIBLE ENTRY</strong></td>
+            <td>
+                <ul>
+                    <li>Dispossession by force, intimidation, threat, strategy, stealth</li>
+                    <li>Must file within <strong>1 YEAR</strong> from dispossession</li>
+                    <li><strong>Regardless of amount</strong> of damages/rentals claimed</li>
+                </ul>
+            </td>
+        </tr>
+        <tr>
+            <td>2</td>
+            <td><strong>UNLAWFUL DETAINER</strong></td>
+            <td>
+                <ul>
+                    <li>Possession originally lawful but became unlawful</li>
+                    <li>Must file within <strong>1 YEAR</strong> from last demand to vacate</li>
+                    <li><strong>Regardless of amount</strong> of damages/rentals claimed</li>
+                </ul>
+            </td>
+        </tr>
+        <tr>
+            <td>3</td>
+            <td><strong>Other Civil Cases</strong> (except probate)</td>
+            <td>
+                Where total amount of claim does NOT exceed:
+                <ul>
+                    <li><span class="period-highlight">₱2,000,000</span> (personal property/damages)</li>
+                    <li><span class="period-highlight">₱400,000</span> assessed value (real property)</li>
+                </ul>
+                <em>Exclusive of interest, damages, attorney's fees, costs</em>
+            </td>
+        </tr>
+    </table>
+</div>
+
+<h4>B. Distinction: Small Claims vs Summary Procedure vs Regular</h4>
+<table>
+    <tr class="comparison-header">
+        <th>Feature</th>
+        <th>Small Claims</th>
+        <th>Summary Procedure</th>
+        <th>Regular Procedure</th>
+    </tr>
+    <tr>
+        <td><strong>Amount</strong></td>
+        <td>≤ ₱1,000,000</td>
+        <td>≤ ₱2,000,000</td>
+        <td>≤ ₱2,000,000 (MTC)<br>> ₱2,000,000 (RTC)</td>
+    </tr>
+    <tr>
+        <td><strong>Case Types</strong></td>
+        <td>Money claims ONLY</td>
+        <td>Ejectment + other civil</td>
+        <td>All civil actions</td>
+    </tr>
+    <tr>
+        <td><strong>Ejectment</strong></td>
+        <td><span class="red-highlight">NOT covered</span></td>
+        <td><span class="green-highlight">COVERED</span></td>
+        <td>N/A (goes to Summary)</td>
+    </tr>
+    <tr>
+        <td><strong>Real Property</strong></td>
+        <td><span class="red-highlight">NOT covered</span></td>
+        <td>AV ≤ ₱400,000</td>
+        <td>Based on AV</td>
+    </tr>
+    <tr>
+        <td><strong>Lawyers</strong></td>
+        <td><span class="red-highlight">NOT allowed</span></td>
+        <td>Allowed</td>
+        <td>Allowed</td>
+    </tr>
+    <tr>
+        <td><strong>Answer Period</strong></td>
+        <td>Response form (10 days or at hearing)</td>
+        <td><strong>10 days</strong></td>
+        <td><strong>30 days</strong></td>
+    </tr>
+    <tr>
+        <td><strong>Preliminary Conference</strong></td>
+        <td>At hearing</td>
+        <td>Within 30 days from answer</td>
+        <td>Pre-trial (formal)</td>
+    </tr>
+    <tr>
+        <td><strong>Decision Period</strong></td>
+        <td>Same day or 5 days</td>
+        <td><strong>30 days</strong></td>
+        <td><strong>90 days</strong></td>
+    </tr>
+    <tr>
+        <td><strong>Appeal</strong></td>
+        <td><span class="red-highlight">NOT APPEALABLE</span></td>
+        <td><span class="green-highlight">APPEALABLE</span> to RTC</td>
+        <td>Appealable</td>
+    </tr>
+    <tr>
+        <td><strong>Barangay Required</strong></td>
+        <td>NOT required</td>
+        <td>Required (if applicable)</td>
+        <td>Required (if applicable)</td>
+    </tr>
+</table>
+
+<h3 class="page-break">2. Procedure Under Summary Rules</h3>
+
+<h4>A. Commencement</h4>
+<table>
+    <tr>
+        <th>Step</th>
+        <th>Action</th>
+        <th>Period</th>
+    </tr>
+    <tr>
+        <td>1</td>
+        <td><strong>Filing of Complaint</strong><br>With court having jurisdiction</td>
+        <td>-</td>
+    </tr>
+    <tr>
+        <td>2</td>
+        <td><strong>Issuance of Summons</strong><br>If complaint is sufficient</td>
+        <td>Promptly upon filing</td>
+    </tr>
+    <tr>
+        <td>3</td>
+        <td><strong>Service of Summons</strong></td>
+        <td>Within 5 days from issuance</td>
+    </tr>
+</table>
+
+<h4>B. Answer</h4>
+<table>
+    <tr>
+        <th>Requirement</th>
+        <th>Rule</th>
+    </tr>
+    <tr>
+        <td><strong>Period to File</strong></td>
+        <td><span class="period-highlight">10 DAYS</span> from service of summons</td>
+    </tr>
+    <tr>
+        <td><strong>Contents</strong></td>
+        <td>
+            <ul>
+                <li>Specific denials under oath</li>
+                <li>Affirmative defenses</li>
+                <li>Compulsory counterclaim (if any)</li>
+            </ul>
+        </td>
+    </tr>
+    <tr>
+        <td><strong>Affidavits</strong></td>
+        <td>Affidavits of witnesses and other evidence must be attached</td>
+    </tr>
+    <tr>
+        <td><strong>Effect of Failure to Answer</strong></td>
+        <td>Court shall render judgment based on allegations in complaint (if warranted)</td>
+    </tr>
+</table>
+
+<h4>C. Preliminary Conference</h4>
+<table>
+    <tr>
+        <th>Aspect</th>
+        <th>Rule</th>
+    </tr>
+    <tr>
+        <td><strong>When Held</strong></td>
+        <td>Not later than <span class="period-highlight">30 DAYS</span> after filing of last pleading</td>
+    </tr>
+    <tr>
+        <td><strong>Purpose</strong></td>
+        <td>
+            <ul>
+                <li>Determine possibility of amicable settlement</li>
+                <li>Clarify and simplify issues</li>
+                <li>Mark evidence</li>
+                <li>Determine need for clarificatory hearing</li>
+            </ul>
+        </td>
+    </tr>
+    <tr>
+        <td><strong>Attendance</strong></td>
+        <td>Parties must appear personally or through authorized representative</td>
+    </tr>
+    <tr>
+        <td><strong>Non-Appearance of Plaintiff</strong></td>
+        <td>Dismissal without prejudice</td>
+    </tr>
+    <tr>
+        <td><strong>Non-Appearance of Defendant</strong></td>
+        <td>Plaintiff presents evidence ex parte</td>
+    </tr>
+</table>
+
+<h4>D. Submission of Position Papers/Affidavits</h4>
+<table>
+    <tr>
+        <th>Document</th>
+        <th>Period</th>
+    </tr>
+    <tr>
+        <td><strong>Position Paper</strong><br>(with affidavits and evidence)</td>
+        <td><span class="period-highlight">10 DAYS</span> from preliminary conference</td>
+    </tr>
+    <tr>
+        <td><strong>Effect of Failure to Submit</strong></td>
+        <td>Case decided on basis of evidence on record</td>
+    </tr>
+</table>
+
+<h4>E. Judgment</h4>
+<table>
+    <tr>
+        <th>Aspect</th>
+        <th>Rule</th>
+    </tr>
+    <tr>
+        <td><strong>When Rendered</strong></td>
+        <td><span class="period-highlight">30 DAYS</span> after receipt of last affidavit/position paper</td>
+    </tr>
+    <tr>
+        <td><strong>Immediately Executory?</strong></td>
+        <td>
+            <strong>Ejectment cases:</strong> YES - immediately executory upon motion<br>
+            <strong>Other cases:</strong> After finality (15 days if no appeal)
+        </td>
+    </tr>
+</table>
+
+<h3>3. Prohibited Pleadings and Motions (Summary Procedure)</h3>
+
+<div class="excluded-box">
+    <h5>✗ PROHIBITED IN SUMMARY PROCEDURE:</h5>
+    <table>
+        <tr>
+            <th>#</th>
+            <th>Prohibited Pleading/Motion</th>
+        </tr>
+        <tr><td>1</td><td>Motion to dismiss (EXCEPT: lack of jurisdiction over subject matter)</td></tr>
+        <tr><td>2</td><td>Motion for bill of particulars</td></tr>
+        <tr><td>3</td><td>Motion for new trial</td></tr>
+        <tr><td>4</td><td>Motion for reconsideration of judgment</td></tr>
+        <tr><td>5</td><td>Motion for reopening of trial</td></tr>
+        <tr><td>6</td><td>Petition for relief from judgment</td></tr>
+        <tr><td>7</td><td>Motion for extension of time to file pleadings, affidavits, or any other paper</td></tr>
+        <tr><td>8</td><td>Memoranda</td></tr>
+        <tr><td>9</td><td>Petition for certiorari, mandamus, or prohibition against interlocutory orders</td></tr>
+        <tr><td>10</td><td>Motion to declare defendant in default</td></tr>
+        <tr><td>11</td><td>Dilatory motions for postponement</td></tr>
+        <tr><td>12</td><td>Reply</td></tr>
+        <tr><td>13</td><td>Third-party complaints</td></tr>
+        <tr><td>14</td><td>Interventions</td></tr>
+    </table>
+</div>
+
+<div class="warning-box">
+    <h5>⚠️ EXCEPTION FOR MOTION TO DISMISS:</h5>
+    <p>Motion to dismiss is allowed ONLY on the ground of <strong>LACK OF JURISDICTION OVER THE SUBJECT MATTER</strong>. All other grounds must be raised as affirmative defenses in the Answer.</p>
+</div>
+
+<h3 class="page-break">4. Appeal from Summary Procedure</h3>
+
+<table>
+    <tr>
+        <th>Aspect</th>
+        <th>Rule</th>
+    </tr>
+    <tr>
+        <td><strong>Is Appeal Allowed?</strong></td>
+        <td><span class="green-highlight">YES</span> - Unlike Small Claims</td>
+    </tr>
+    <tr>
+        <td><strong>Mode of Appeal</strong></td>
+        <td>Notice of Appeal (Rule 40)</td>
+    </tr>
+    <tr>
+        <td><strong>Period</strong></td>
+        <td><span class="period-highlight">15 DAYS</span> from notice of judgment</td>
+    </tr>
+    <tr>
+        <td><strong>Where Filed</strong></td>
+        <td>With the MTC that rendered the decision</td>
+    </tr>
+    <tr>
+        <td><strong>Appellate Court</strong></td>
+        <td>Regional Trial Court</td>
+    </tr>
+    <tr>
+        <td><strong>Appeal Bond</strong></td>
+        <td>Not required (unless execution pending appeal)</td>
+    </tr>
+</table>
+
+<h4>Special Rule for Ejectment Cases</h4>
+<div class="important-box">
+    <h5>SUPERSEDEAS BOND (To Stay Execution)</h5>
+    <p>In ejectment cases, to <strong>STAY EXECUTION</strong> pending appeal, defendant must:</p>
+    <ol>
+        <li>Perfect the appeal</li>
+        <li>File a <strong>SUPERSEDEAS BOND</strong> to answer for:
+            <ul>
+                <li>Rents</li>
+                <li>Damages</li>
+                <li>Costs accruing down to the time of judgment</li>
+            </ul>
+        </li>
+        <li>Deposit <strong>MONTHLY RENTALS</strong> as they fall due during pendency of appeal</li>
+    </ol>
+    <p><strong>Failure to comply</strong> = Immediate execution</p>
+</div>
+
+<div class="section-divider"></div>
+
+<h2 class="page-break">PART III: COMPARISON CHARTS</h2>
+
+<h3>Complete Comparison: Small Claims vs Summary vs Regular</h3>
+
+<table>
+    <tr class="comparison-header">
+        <th width="20%">Aspect</th>
+        <th width="25%">Small Claims<br>(A.M. 08-8-7-SC)</th>
+        <th width="25%">Summary Procedure<br>(A.M. 08-8-7-SC)</th>
+        <th width="30%">Regular Procedure<br>(Rules of Court)</th>
+    </tr>
+    <tr>
+        <td><strong>Jurisdictional Amount</strong></td>
+        <td>≤ ₱1,000,000</td>
+        <td>≤ ₱2,000,000 (personal)<br>≤ ₱400,000 AV (real)</td>
+        <td>≤ ₱2,000,000 (MTC)<br>> ₱2,000,000 (RTC)</td>
+    </tr>
+    <tr>
+        <td><strong>Nature of Claims</strong></td>
+        <td>Money claims ONLY</td>
+        <td>Ejectment + other civil</td>
+        <td>All civil actions</td>
+    </tr>
+    <tr>
+        <td><strong>Initiatory Pleading</strong></td>
+        <td>Statement of Claim (Form 1-SCC)</td>
+        <td>Complaint</td>
+        <td>Complaint</td>
+    </tr>
+    <tr>
+        <td><strong>Barangay Conciliation</strong></td>
+        <td><span class="green-highlight">NOT required</span></td>
+        <td>Required (if applicable)</td>
+        <td>Required (if applicable)</td>
+    </tr>
+    <tr>
+        <td><strong>Answer Period</strong></td>
+        <td>10 days or at hearing</td>
+        <td>10 days</td>
+        <td>30 days</td>
+    </tr>
+    <tr>
+        <td><strong>Lawyers at Hearing</strong></td>
+        <td><span class="red-highlight">NOT allowed</span></td>
+        <td>Allowed</td>
+        <td>Allowed</td>
+    </tr>
+    <tr>
+        <td><strong>Motion to Dismiss</strong></td>
+        <td><span class="red-highlight">NOT allowed</span></td>
+        <td>Only for lack of jurisdiction over subject matter</td>
+        <td>Limited grounds (2019 Rules)</td>
+    </tr>
+    <tr>
+        <td><strong>Default</strong></td>
+        <td>No declaration of default</td>
+        <td>No declaration of default</td>
+        <td>Declaration of default allowed</td>
+    </tr>
+    <tr>
+        <td><strong>Third-Party Complaint</strong></td>
+        <td><span class="red-highlight">NOT allowed</span></td>
+        <td><span class="red-highlight">NOT allowed</span></td>
+        <td>Allowed</td>
+    </tr>
+    <tr>
+        <td><strong>Intervention</strong></td>
+        <td><span class="red-highlight">NOT allowed</span></td>
+        <td><span class="red-highlight">NOT allowed</span></td>
+        <td>Allowed</td>
+    </tr>
+    <tr>
+        <td><strong>Preliminary Conference</strong></td>
+        <td>At hearing (same day)</td>
+        <td>Within 30 days from last pleading</td>
+        <td>Pre-trial (after mediation/JDR)</td>
+    </tr>
+    <tr>
+        <td><strong>Position Papers</strong></td>
+        <td>Not required</td>
+        <td>Within 10 days from conference</td>
+        <td>Memoranda (if required)</td>
+    </tr>
+    <tr>
+        <td><strong>Decision Period</strong></td>
+        <td>Same day or 5 days</td>
+        <td>30 days from submission</td>
+        <td>90 days from submission</td>
+    </tr>
+    <tr>
+        <td><strong>MR / New Trial</strong></td>
+        <td><span class="red-highlight">NOT allowed</span></td>
+        <td><span class="red-highlight">NOT allowed</span></td>
+        <td>Allowed (15 days)</td>
+    </tr>
+    <tr>
+        <td><strong>Appeal</strong></td>
+        <td><span class="red-highlight">NOT APPEALABLE</span></td>
+        <td><span class="green-highlight">APPEALABLE</span> (15 days)</td>
+        <td>Appealable (15 days)</td>
+    </tr>
+    <tr>
+        <td><strong>Remedy if Aggrieved</strong></td>
+        <td>Certiorari (Rule 65) to RTC</td>
+        <td>Appeal to RTC; then CA</td>
+        <td>Appeal; MR; Certiorari</td>
+    </tr>
+    <tr>
+        <td><strong>Execution</strong></td>
+        <td>Immediately executory</td>
+        <td>Ejectment: Immediate<br>Others: After finality</td>
+        <td>After finality</td>
+    </tr>
+</table>
+
+<div class="section-divider"></div>
+
+<h2 class="page-break">PART IV: FLOWCHARTS</h2>
+
+<h3>A. Small Claims Procedure Flowchart</h3>
+
+<div style="text-align: center; margin: 20px 0;">
+    <div class="flow-step" style="display: block; margin: 10px auto; width: 80%;">
+        <strong>STEP 1: FILE STATEMENT OF CLAIM</strong><br>
+        (Form 1-SCC with attachments)
+    </div>
+    <div class="flow-arrow">↓</div>
+
+    <div class="flow-step" style="display: block; margin: 10px auto; width: 80%;">
+        <strong>STEP 2: COURT ACTION (within 24 hours)</strong><br>
+        Sufficient → Issues Summons + Sets Hearing<br>
+        Insufficient → Dismisses or Orders Amendment
+    </div>
+    <div class="flow-arrow">↓</div>
+
+    <div class="flow-step" style="display: block; margin: 10px auto; width: 80%;">
+        <strong>STEP 3: DEFENDANT RECEIVES SUMMONS</strong><br>
+        Must file Response (Form 2-SCC) within 10 days or at hearing
+    </div>
+    <div class="flow-arrow">↓</div>
+
+    <div class="flow-step" style="display: block; margin: 10px auto; width: 80%;">
+        <strong>STEP 4: HEARING (15-30 days from filing)</strong><br>
+        Parties appear personally (NO LAWYERS)<br>
+        Settlement attempted
+    </div>
+    <div class="flow-arrow">↓</div>
+
+    <div style="display: flex; justify-content: center; gap: 20px;">
+        <div class="flow-step" style="background-color: #28a745;">
+            <strong>SETTLEMENT</strong><br>
+            Judgment on Compromise<br>
+            (Final & Executory)
+        </div>
+        <div class="flow-step" style="background-color: #dc3545;">
+            <strong>NO SETTLEMENT</strong><br>
+            Presentation of Evidence<br>
+            ↓
+        </div>
+    </div>
+    <div class="flow-arrow">↓</div>
+
+    <div class="flow-step" style="display: block; margin: 10px auto; width: 80%;">
+        <strong>STEP 5: DECISION</strong><br>
+        Same day or within 5 days<br>
+        <span style="background-color: #ffeb3b; padding: 2px 5px;">FINAL and UNAPPEALABLE</span>
+    </div>
+    <div class="flow-arrow">↓</div>
+
+    <div class="flow-step" style="display: block; margin: 10px auto; width: 80%;">
+        <strong>STEP 6: EXECUTION</strong><br>
+        Immediately executory upon motion
+    </div>
+</div>
+
+<h3 class="page-break">B. Summary Procedure (Ejectment) Flowchart</h3>
+
+<div style="text-align: center; margin: 20px 0;">
+    <div class="flow-step" style="display: block; margin: 10px auto; width: 80%;">
+        <strong>STEP 1: FILE COMPLAINT</strong><br>
+        (With Barangay Certificate if required)
+    </div>
+    <div class="flow-arrow">↓</div>
+
+    <div class="flow-step" style="display: block; margin: 10px auto; width: 80%;">
+        <strong>STEP 2: SUMMONS ISSUED & SERVED</strong><br>
+        (Within 5 days)
+    </div>
+    <div class="flow-arrow">↓</div>
+
+    <div class="flow-step" style="display: block; margin: 10px auto; width: 80%;">
+        <strong>STEP 3: ANSWER</strong><br>
+        Within <span style="background-color: #ffeb3b; padding: 2px 5px;">10 DAYS</span> from summons<br>
+        (With affidavits and counterclaim if any)
+    </div>
+    <div class="flow-arrow">↓</div>
+
+    <div class="flow-step" style="display: block; margin: 10px auto; width: 80%;">
+        <strong>STEP 4: PRELIMINARY CONFERENCE</strong><br>
+        Within <span style="background-color: #ffeb3b; padding: 2px 5px;">30 DAYS</span> from last pleading<br>
+        Settlement / Issue clarification
+    </div>
+    <div class="flow-arrow">↓</div>
+
+    <div class="flow-step" style="display: block; margin: 10px auto; width: 80%;">
+        <strong>STEP 5: POSITION PAPERS</strong><br>
+        Within <span style="background-color: #ffeb3b; padding: 2px 5px;">10 DAYS</span> from preliminary conference
+    </div>
+    <div class="flow-arrow">↓</div>
+
+    <div class="flow-step" style="display: block; margin: 10px auto; width: 80%;">
+        <strong>STEP 6: JUDGMENT</strong><br>
+        Within <span style="background-color: #ffeb3b; padding: 2px 5px;">30 DAYS</span> from submission<br>
+        <strong>Immediately executory (ejectment)</strong>
+    </div>
+    <div class="flow-arrow">↓</div>
+
+    <div style="display: flex; justify-content: center; gap: 20px;">
+        <div class="flow-step" style="background-color: #28a745;">
+            <strong>NO APPEAL</strong><br>
+            → Execution
+        </div>
+        <div class="flow-step" style="background-color: #17a2b8;">
+            <strong>APPEAL (15 days)</strong><br>
+            + Supersedeas Bond<br>
+            + Monthly Deposits<br>
+            → To RTC
+        </div>
+    </div>
+</div>
+
+<div class="section-divider"></div>
+
+<h2 class="page-break">PART V: CHECKLISTS</h2>
+
+<h3>A. Checklist: Filing Small Claims Case</h3>
+<div class="info-box">
+    <h5>BEFORE FILING:</h5>
+    <ul class="checklist">
+        <li>Claim is ≤ ₱1,000,000</li>
+        <li>Claim is for money only (not real property, not ejectment)</li>
+        <li>Claim is covered (loan, lease, services, sale of personal property, etc.)</li>
+        <li>Determined proper venue (residence of plaintiff or defendant)</li>
+        <li>NOT against the government</li>
+        <li>NO provisional remedy needed</li>
+    </ul>
+
+    <h5>DOCUMENTS TO PREPARE:</h5>
+    <ul class="checklist">
+        <li>Statement of Claim (Form 1-SCC) - completely filled out</li>
+        <li>Contract/Agreement/Promissory Note (certified copy)</li>
+        <li>Receipts or proof of payment/non-payment</li>
+        <li>Demand letter and proof of service (if any)</li>
+        <li>Computation of claim</li>
+        <li>Valid ID of plaintiff</li>
+        <li>Authority document (if corporation/through representative)</li>
+        <li>Filing fee</li>
+    </ul>
+
+    <h5>AT THE HEARING:</h5>
+    <ul class="checklist">
+        <li>Appear PERSONALLY (no lawyer)</li>
+        <li>Bring original documents</li>
+        <li>Bring witnesses (if needed)</li>
+        <li>Be prepared to settle</li>
+        <li>Be ready to present your case simply and clearly</li>
+    </ul>
+</div>
+
+<h3>B. Checklist: Defending Small Claims Case</h3>
+<div class="info-box">
+    <h5>UPON RECEIVING SUMMONS:</h5>
+    <ul class="checklist">
+        <li>Note the hearing date</li>
+        <li>Prepare Response (Form 2-SCC) within 10 days</li>
+        <li>Gather evidence to support defense</li>
+        <li>Prepare counterclaim if applicable (compulsory only)</li>
+    </ul>
+
+    <h5>DOCUMENTS FOR DEFENSE:</h5>
+    <ul class="checklist">
+        <li>Response (Form 2-SCC) - completely filled out</li>
+        <li>Proof of payment (if claiming payment made)</li>
+        <li>Contract showing different terms (if disputing amount)</li>
+        <li>Documents showing defects/non-performance (if applicable)</li>
+        <li>Computation of counterclaim (if any)</li>
+        <li>Valid ID</li>
+    </ul>
+
+    <h5>AT THE HEARING:</h5>
+    <ul class="checklist">
+        <li>Appear PERSONALLY (no lawyer)</li>
+        <li>Bring original documents</li>
+        <li>Be prepared to settle</li>
+        <li>Present defense clearly</li>
+    </ul>
+</div>
+
+<h3>C. Checklist: Filing Ejectment Case (Summary Procedure)</h3>
+<div class="info-box">
+    <h5>BEFORE FILING:</h5>
+    <ul class="checklist">
+        <li>Determined type: Forcible Entry OR Unlawful Detainer</li>
+        <li>Within 1-year period from dispossession/last demand</li>
+        <li>Barangay conciliation completed (if required)</li>
+        <li>Demand to vacate served (for unlawful detainer)</li>
+    </ul>
+
+    <h5>DOCUMENTS TO PREPARE:</h5>
+    <ul class="checklist">
+        <li>Verified Complaint</li>
+        <li>Contract of Lease (if unlawful detainer based on lease)</li>
+        <li>Proof of ownership/right to possess</li>
+        <li>Demand letter to vacate with proof of service</li>
+        <li>Barangay Certificate to File Action</li>
+        <li>Tax Declaration (if claiming ownership)</li>
+        <li>Affidavits of witnesses</li>
+        <li>Filing fee</li>
+    </ul>
+
+    <h5>PERIODS TO REMEMBER:</h5>
+    <ul class="checklist">
+        <li>Answer: 10 days from summons</li>
+        <li>Preliminary Conference: Within 30 days from last pleading</li>
+        <li>Position Paper: 10 days from conference</li>
+        <li>Decision: 30 days from submission</li>
+        <li>Appeal: 15 days from judgment</li>
+    </ul>
+</div>
+
+<div class="section-divider"></div>
+
+<h3>Key Periods Summary</h3>
+<table>
+    <tr>
+        <th colspan="2" style="background-color: #1a5276; text-align: center;">SMALL CLAIMS - KEY PERIODS</th>
+    </tr>
+    <tr><td>Court action on filing</td><td><strong>24 hours</strong></td></tr>
+    <tr><td>Response period</td><td><strong>10 days</strong> from summons (or at hearing)</td></tr>
+    <tr><td>Hearing date</td><td><strong>15-30 days</strong> from filing</td></tr>
+    <tr><td>Decision</td><td><strong>Same day</strong> or <strong>5 days</strong></td></tr>
+    <tr><td>Appeal</td><td><strong>NOT ALLOWED</strong></td></tr>
+    <tr><td>Certiorari (if GADALEJ)</td><td><strong>60 days</strong> from notice</td></tr>
+</table>
+
+<br>
+
+<table>
+    <tr>
+        <th colspan="2" style="background-color: #1a5276; text-align: center;">SUMMARY PROCEDURE - KEY PERIODS</th>
+    </tr>
+    <tr><td>Service of summons</td><td><strong>5 days</strong> from issuance</td></tr>
+    <tr><td>Answer</td><td><strong>10 days</strong> from summons</td></tr>
+    <tr><td>Preliminary Conference</td><td><strong>30 days</strong> from last pleading</td></tr>
+    <tr><td>Position Papers</td><td><strong>10 days</strong> from conference</td></tr>
+    <tr><td>Decision</td><td><strong>30 days</strong> from submission</td></tr>
+    <tr><td>Appeal</td><td><strong>15 days</strong> from notice of judgment</td></tr>
+</table>
+
+<hr>
+<p style="text-align: center; font-size: 9pt; color: #666;">
+    <em>This document is for educational purposes. Always consult the latest rules and jurisprudence.</em><br>
+    <em>Based on A.M. No. 08-8-7-SC as amended by A.M. No. 21-04-17-SC</em>
+</p>
+
+</body>
+</html>
