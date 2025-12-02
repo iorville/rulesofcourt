@@ -1,0 +1,603 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Orville's Law Reference - Philippine Rules of Court</title>
+    <link rel="stylesheet" href="styles.css">
+    <style>
+        /* Additional Index-specific styles */
+        .hero-section {
+            text-align: center;
+            padding: 60px 20px;
+            background: linear-gradient(135deg, rgba(26,26,46,0.95) 0%, rgba(22,33,62,0.95) 100%),
+                        url('data:image/svg+xml,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100"><text y=".9em" font-size="90" opacity="0.03">⚖</text></svg>');
+            background-size: cover, 200px 200px;
+        }
+
+        .hero-section h2 {
+            font-family: 'Palatino Linotype', 'Book Antiqua', Palatino, serif;
+            font-size: 2rem;
+            color: #f5f5f5;
+            font-weight: normal;
+            margin-bottom: 15px;
+        }
+
+        .hero-section p {
+            color: #e8d48b;
+            font-size: 1.1rem;
+            max-width: 600px;
+            margin: 0 auto;
+        }
+
+        .stats-bar {
+            display: flex;
+            justify-content: center;
+            gap: 50px;
+            margin-top: 40px;
+            flex-wrap: wrap;
+        }
+
+        .stat-item {
+            text-align: center;
+        }
+
+        .stat-number {
+            font-size: 2.5rem;
+            color: #c9a227;
+            font-family: 'Palatino Linotype', serif;
+            display: block;
+        }
+
+        .stat-label {
+            color: #aaa;
+            font-size: 0.9rem;
+            text-transform: uppercase;
+            letter-spacing: 2px;
+        }
+
+        .search-box {
+            max-width: 500px;
+            margin: 30px auto 0;
+            position: relative;
+        }
+
+        .search-box input {
+            width: 100%;
+            padding: 15px 20px 15px 50px;
+            border: 2px solid #c9a227;
+            border-radius: 30px;
+            font-size: 1rem;
+            font-family: 'Georgia', serif;
+            background: rgba(255,255,255,0.1);
+            color: #f5f5f5;
+            outline: none;
+            transition: 0.3s ease;
+        }
+
+        .search-box input::placeholder {
+            color: #aaa;
+        }
+
+        .search-box input:focus {
+            background: rgba(255,255,255,0.15);
+            box-shadow: 0 0 20px rgba(201, 162, 39, 0.3);
+        }
+
+        .search-box::before {
+            content: '🔍';
+            position: absolute;
+            left: 20px;
+            top: 50%;
+            transform: translateY(-50%);
+            font-size: 1.2rem;
+        }
+
+        .category-tabs {
+            display: flex;
+            justify-content: center;
+            gap: 10px;
+            margin-bottom: 30px;
+            flex-wrap: wrap;
+        }
+
+        .category-tab {
+            padding: 10px 25px;
+            background: transparent;
+            border: 2px solid var(--border-light);
+            border-radius: 25px;
+            cursor: pointer;
+            font-family: 'Georgia', serif;
+            font-size: 0.95rem;
+            transition: 0.3s ease;
+            color: var(--text-dark);
+        }
+
+        .category-tab:hover,
+        .category-tab.active {
+            background: var(--primary-dark);
+            border-color: var(--accent-gold);
+            color: var(--text-light);
+        }
+
+        .last-updated {
+            text-align: center;
+            color: var(--text-muted);
+            font-style: italic;
+            margin-top: 40px;
+            padding-bottom: 20px;
+            border-bottom: 1px solid var(--border-light);
+        }
+
+        /* Gavel animation on hover */
+        .card-header:hover .gavel-icon {
+            animation: gavel-strike 0.5s ease;
+        }
+
+        @keyframes gavel-strike {
+            0%, 100% { transform: rotate(0deg); }
+            50% { transform: rotate(-20deg); }
+        }
+
+        /* Quick access floating button */
+        .quick-access {
+            position: fixed;
+            bottom: 30px;
+            right: 30px;
+            background: var(--accent-burgundy);
+            color: var(--text-light);
+            width: 60px;
+            height: 60px;
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 1.5rem;
+            box-shadow: var(--shadow-lg);
+            cursor: pointer;
+            transition: 0.3s ease;
+            z-index: 999;
+            text-decoration: none;
+        }
+
+        .quick-access:hover {
+            background: var(--primary-dark);
+            transform: scale(1.1);
+        }
+
+        /* Welcome message */
+        .welcome-card {
+            background: linear-gradient(135deg, var(--bg-paper) 0%, #f5f3ee 100%);
+            border: 2px solid var(--accent-gold);
+            border-radius: 10px;
+            padding: 30px;
+            margin-bottom: 40px;
+            text-align: center;
+        }
+
+        .welcome-card h3 {
+            font-family: 'Palatino Linotype', serif;
+            color: var(--primary-dark);
+            font-size: 1.5rem;
+            margin-bottom: 15px;
+        }
+
+        .welcome-card p {
+            color: var(--text-muted);
+            max-width: 700px;
+            margin: 0 auto;
+        }
+    </style>
+</head>
+<body>
+
+    <!-- Orville Branding Sidebar -->
+    <aside class="orville-brand">
+        <div class="brand-line"></div>
+        <svg class="brand-icon" viewBox="0 0 100 100" xmlns="http://www.w3.org/2000/svg">
+            <!-- Scales of Justice Icon -->
+            <circle cx="50" cy="15" r="8" fill="currentColor"/>
+            <rect x="48" y="23" width="4" height="50" fill="currentColor"/>
+            <rect x="30" y="73" width="40" height="6" rx="2" fill="currentColor"/>
+            <rect x="20" y="30" width="60" height="4" fill="currentColor"/>
+            <!-- Left pan -->
+            <line x1="25" y1="34" x2="25" y2="50" stroke="currentColor" stroke-width="2"/>
+            <path d="M15 50 Q25 55 35 50 L32 60 Q25 62 18 60 Z" fill="currentColor"/>
+            <!-- Right pan -->
+            <line x1="75" y1="34" x2="75" y2="45" stroke="currentColor" stroke-width="2"/>
+            <path d="M65 45 Q75 50 85 45 L82 55 Q75 57 68 55 Z" fill="currentColor"/>
+        </svg>
+        <span class="brand-text">Orville</span>
+        <div class="brand-line"></div>
+    </aside>
+
+    <!-- Main Content Wrapper -->
+    <div class="main-wrapper">
+
+        <!-- Header -->
+        <header class="law-header">
+            <div class="header-content">
+                <h1>⚖ Philippine Rules of Court</h1>
+                <p class="subtitle">Comprehensive Legal Reference Guide</p>
+            </div>
+            <span class="scales-icon">⚖</span>
+        </header>
+
+        <!-- Hero Section -->
+        <section class="hero-section">
+            <h2>Welcome to Orville's Law Reference</h2>
+            <p>A comprehensive guide to Philippine Civil Procedure, integrating the Rules of Court,
+               RA 11576, A.M. No. 08-8-7-SC, and the 2019 Amendments</p>
+
+            <div class="stats-bar">
+                <div class="stat-item">
+                    <span class="stat-number">3</span>
+                    <span class="stat-label">Guides</span>
+                </div>
+                <div class="stat-item">
+                    <span class="stat-number">50+</span>
+                    <span class="stat-label">Topics</span>
+                </div>
+                <div class="stat-item">
+                    <span class="stat-number">100+</span>
+                    <span class="stat-label">Flowcharts & Tables</span>
+                </div>
+            </div>
+
+            <div class="search-box">
+                <input type="text" id="searchInput" placeholder="Search topics... (e.g., 'jurisdiction', 'appeal', 'summons')">
+            </div>
+        </section>
+
+        <!-- Navigation -->
+        <nav class="topic-nav">
+            <div class="nav-container">
+                <a href="#all" class="nav-btn active" onclick="filterCards('all')">
+                    <span class="icon">📚</span> All Topics
+                </a>
+                <a href="#procedure" class="nav-btn" onclick="filterCards('procedure')">
+                    <span class="icon">⚖</span> Civil Procedure
+                </a>
+                <a href="#special" class="nav-btn" onclick="filterCards('special')">
+                    <span class="icon">📋</span> Special Procedures
+                </a>
+                <a href="#reference" class="nav-btn" onclick="filterCards('reference')">
+                    <span class="icon">📖</span> Quick Reference
+                </a>
+            </div>
+        </nav>
+
+        <!-- Main Content -->
+        <main class="content-area">
+
+            <!-- Welcome Card -->
+            <div class="welcome-card">
+                <h3>📜 About This Reference</h3>
+                <p>This collection provides detailed guides on Philippine civil procedure,
+                   designed for law students, practitioners, and anyone seeking to understand
+                   the judicial process. Each guide includes flowcharts, comparison tables,
+                   checklists, and key period summaries for easy reference.</p>
+            </div>
+
+            <!-- Last Updated -->
+            <p class="last-updated">Last Updated: December 2024 | Based on current laws and jurisprudence</p>
+
+            <!-- Section: Main Guides -->
+            <div class="section-divider">
+                <h2>📚 Main Guides</h2>
+            </div>
+
+            <div class="topics-grid" id="topicsGrid">
+
+                <!-- Card 1: Overview -->
+                <article class="topic-card" data-category="procedure reference">
+                    <div class="card-header">
+                        <h3>📑 Philippine Civil Litigation Process</h3>
+                        <span class="legal-ref">Overview & General Reference</span>
+                    </div>
+                    <div class="card-body">
+                        <p>Comprehensive overview of the entire civil litigation process from
+                           barangay conciliation to execution of judgment.</p>
+                        <ul class="card-topics">
+                            <li>Court Hierarchy & Jurisdiction</li>
+                            <li>Barangay Conciliation (Katarungang Pambarangay)</li>
+                            <li>Pleadings & Periods Overview</li>
+                            <li>Appeals Routes</li>
+                            <li>Special Courts Reference</li>
+                        </ul>
+                    </div>
+                    <div class="card-footer">
+                        <a href="Philippine_Civil_Litigation_Process.html" class="view-btn">
+                            📖 View Guide
+                        </a>
+                    </div>
+                </article>
+
+                <!-- Card 2: Regular Civil Procedure -->
+                <article class="topic-card" data-category="procedure">
+                    <div class="card-header">
+                        <h3>⚖ Regular Civil Procedure</h3>
+                        <span class="legal-ref">RA 11576 | 2019 Rules | Rules of Court</span>
+                    </div>
+                    <div class="card-body">
+                        <p>Detailed guide on regular civil procedure integrating RA 11576
+                           and the 2019 Amendments to the Rules of Civil Procedure.</p>
+                        <ul class="card-topics">
+                            <li>Jurisdiction (RA 11576 - Unified Amounts)</li>
+                            <li>Pleadings, Motions & Periods</li>
+                            <li>Pre-Trial & Trial Procedures</li>
+                            <li>Judgment & Post-Judgment Remedies</li>
+                            <li>Execution & Appeals</li>
+                            <li>Special Civil Actions</li>
+                            <li>Provisional Remedies</li>
+                        </ul>
+                    </div>
+                    <div class="card-footer">
+                        <a href="Regular_Civil_Procedure_Guide.html" class="view-btn">
+                            📖 View Guide
+                        </a>
+                    </div>
+                </article>
+
+                <!-- Card 3: Small Claims & Summary Procedure -->
+                <article class="topic-card" data-category="special">
+                    <div class="card-header">
+                        <h3>📋 Small Claims & Summary Procedure</h3>
+                        <span class="legal-ref">A.M. No. 08-8-7-SC</span>
+                    </div>
+                    <div class="card-body">
+                        <p>Comprehensive coverage of special first-level court procedures
+                           including small claims (no lawyers, no appeal) and summary procedure.</p>
+                        <ul class="card-topics">
+                            <li>Small Claims (≤₱1,000,000)</li>
+                            <li>Summary Procedure (Ejectment, ≤₱2M)</li>
+                            <li>Prohibited Pleadings & Motions</li>
+                            <li>Forms & Checklists</li>
+                            <li>Comparison Charts</li>
+                        </ul>
+                    </div>
+                    <div class="card-footer">
+                        <a href="AM-08-8-7-SC_Detailed_Guide.html" class="view-btn">
+                            📖 View Guide
+                        </a>
+                    </div>
+                </article>
+
+            </div>
+
+            <!-- Section: Quick Reference -->
+            <div class="section-divider">
+                <h2>⚡ Quick Reference</h2>
+            </div>
+
+            <div class="topics-grid">
+
+                <!-- Quick Ref: Key Periods -->
+                <article class="topic-card" data-category="reference">
+                    <div class="card-header">
+                        <h3>⏱ Key Periods at a Glance</h3>
+                        <span class="legal-ref">Critical Deadlines</span>
+                    </div>
+                    <div class="card-body">
+                        <table class="law-table" style="margin: 0; box-shadow: none;">
+                            <tr>
+                                <td><strong>Answer</strong></td>
+                                <td><span class="period-badge">30 days</span></td>
+                            </tr>
+                            <tr>
+                                <td><strong>Appeal</strong></td>
+                                <td><span class="period-badge">15 days</span></td>
+                            </tr>
+                            <tr>
+                                <td><strong>Certiorari</strong></td>
+                                <td><span class="period-badge">60 days</span> (strict)</td>
+                            </tr>
+                            <tr>
+                                <td><strong>MR/MNT</strong></td>
+                                <td><span class="period-badge">15 days</span></td>
+                            </tr>
+                            <tr>
+                                <td><strong>Execution (motion)</strong></td>
+                                <td><span class="period-badge">5 years</span></td>
+                            </tr>
+                            <tr>
+                                <td><strong>Execution (action)</strong></td>
+                                <td><span class="period-badge">10 years</span></td>
+                            </tr>
+                        </table>
+                    </div>
+                    <div class="card-footer">
+                        <a href="Regular_Civil_Procedure_Guide.html#part19" class="view-btn">
+                            📖 View All Periods
+                        </a>
+                    </div>
+                </article>
+
+                <!-- Quick Ref: Jurisdiction -->
+                <article class="topic-card" data-category="reference">
+                    <div class="card-header">
+                        <h3>🏛 Jurisdiction Thresholds</h3>
+                        <span class="legal-ref">RA 11576 (Nationwide Uniform)</span>
+                    </div>
+                    <div class="card-body">
+                        <table class="law-table" style="margin: 0; box-shadow: none;">
+                            <tr>
+                                <th colspan="2">First-Level Courts (MTC)</th>
+                            </tr>
+                            <tr>
+                                <td>Personal Actions</td>
+                                <td><strong>≤ ₱2,000,000</strong></td>
+                            </tr>
+                            <tr>
+                                <td>Real Actions (AV)</td>
+                                <td><strong>≤ ₱400,000</strong></td>
+                            </tr>
+                            <tr>
+                                <td>Small Claims</td>
+                                <td><strong>≤ ₱1,000,000</strong></td>
+                            </tr>
+                            <tr>
+                                <th colspan="2">RTC</th>
+                            </tr>
+                            <tr>
+                                <td>Personal Actions</td>
+                                <td><strong>> ₱2,000,000</strong></td>
+                            </tr>
+                            <tr>
+                                <td>Real Actions (AV)</td>
+                                <td><strong>> ₱400,000</strong></td>
+                            </tr>
+                        </table>
+                    </div>
+                    <div class="card-footer">
+                        <a href="Regular_Civil_Procedure_Guide.html#part1" class="view-btn">
+                            📖 View Full Jurisdiction Guide
+                        </a>
+                    </div>
+                </article>
+
+            </div>
+
+            <!-- Section: Coming Soon -->
+            <div class="section-divider">
+                <h2>🔜 Coming Soon</h2>
+            </div>
+
+            <div class="topics-grid">
+                <article class="topic-card" style="opacity: 0.6;">
+                    <div class="card-header">
+                        <h3>🏛 Special Courts</h3>
+                        <span class="legal-ref">Sandiganbayan, CTA, Family Courts, Shari'a</span>
+                    </div>
+                    <div class="card-body">
+                        <p>Detailed procedures for special courts including jurisdiction,
+                           covered cases, and appeal routes.</p>
+                        <ul class="card-topics">
+                            <li>Sandiganbayan Procedures</li>
+                            <li>Court of Tax Appeals</li>
+                            <li>Family Court Jurisdiction</li>
+                            <li>Shari'a Court Proceedings</li>
+                        </ul>
+                    </div>
+                    <div class="card-footer">
+                        <span class="view-btn" style="background: #888; border-color: #888; cursor: not-allowed;">
+                            🔜 Coming Soon
+                        </span>
+                    </div>
+                </article>
+
+                <article class="topic-card" style="opacity: 0.6;">
+                    <div class="card-header">
+                        <h3>🏘 Katarungang Pambarangay</h3>
+                        <span class="legal-ref">LGC Secs. 399-422</span>
+                    </div>
+                    <div class="card-body">
+                        <p>Complete guide to barangay conciliation proceedings as a
+                           pre-condition to filing court cases.</p>
+                        <ul class="card-topics">
+                            <li>Coverage & Exceptions</li>
+                            <li>Procedure & Forms</li>
+                            <li>Effects of Non-Compliance</li>
+                            <li>Enforcement of Settlement</li>
+                        </ul>
+                    </div>
+                    <div class="card-footer">
+                        <span class="view-btn" style="background: #888; border-color: #888; cursor: not-allowed;">
+                            🔜 Coming Soon
+                        </span>
+                    </div>
+                </article>
+            </div>
+
+        </main>
+
+        <!-- Footer -->
+        <footer class="law-footer">
+            <div class="footer-content">
+                <div class="footer-brand">
+                    ⚖ Orville's Law Reference
+                </div>
+                <div class="footer-text">
+                    Philippine Rules of Court & Civil Procedure<br>
+                    © 2024 - For Educational Purposes
+                </div>
+                <div class="footer-disclaimer">
+                    This reference is for educational purposes only.
+                    Always verify with current laws and consult a licensed attorney.
+                </div>
+            </div>
+        </footer>
+
+    </div>
+
+    <!-- Quick Access Button -->
+    <a href="#" class="quick-access" title="Back to Top">↑</a>
+
+    <!-- JavaScript for Search and Filter -->
+    <script>
+        // Search functionality
+        const searchInput = document.getElementById('searchInput');
+        const topicsGrid = document.getElementById('topicsGrid');
+        const cards = document.querySelectorAll('.topic-card');
+
+        searchInput.addEventListener('input', function(e) {
+            const searchTerm = e.target.value.toLowerCase();
+
+            cards.forEach(card => {
+                const text = card.textContent.toLowerCase();
+                if (text.includes(searchTerm)) {
+                    card.style.display = 'block';
+                } else {
+                    card.style.display = 'none';
+                }
+            });
+        });
+
+        // Filter by category
+        function filterCards(category) {
+            // Update active button
+            document.querySelectorAll('.nav-btn').forEach(btn => {
+                btn.classList.remove('active');
+            });
+            event.target.closest('.nav-btn').classList.add('active');
+
+            // Filter cards
+            cards.forEach(card => {
+                if (category === 'all') {
+                    card.style.display = 'block';
+                } else {
+                    const cardCategories = card.dataset.category || '';
+                    if (cardCategories.includes(category)) {
+                        card.style.display = 'block';
+                    } else {
+                        card.style.display = 'none';
+                    }
+                }
+            });
+        }
+
+        // Smooth scroll for quick access button
+        document.querySelector('.quick-access').addEventListener('click', function(e) {
+            e.preventDefault();
+            window.scrollTo({ top: 0, behavior: 'smooth' });
+        });
+
+        // Show/hide quick access button based on scroll
+        window.addEventListener('scroll', function() {
+            const quickAccess = document.querySelector('.quick-access');
+            if (window.scrollY > 300) {
+                quickAccess.style.opacity = '1';
+                quickAccess.style.pointerEvents = 'auto';
+            } else {
+                quickAccess.style.opacity = '0';
+                quickAccess.style.pointerEvents = 'none';
+            }
+        });
+
+        // Initialize quick access button state
+        document.querySelector('.quick-access').style.opacity = '0';
+        document.querySelector('.quick-access').style.pointerEvents = 'none';
+    </script>
+
+</body>
+</html>
